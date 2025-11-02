@@ -28,6 +28,7 @@ php artisan serve
 - **🏠 Property Management** - Full CRUD operations for real estate properties
 - **🇲🇽 Mexican Localization** - Authentic Mexican addresses, states, and cities
 - **🔍 Advanced Search** - Filter by location, price, property type, and more
+  - **Smart Bedroom/Bathroom Search** - Search for "3 bedrooms" returns 3+ bedroom properties
 - **📊 Analytics** - Property statistics and market insights
 - **🛡️ Robust Validation** - Comprehensive data validation with Spanish error messages
 - **🧪 Test Coverage** - Extensive test suite ensuring reliability

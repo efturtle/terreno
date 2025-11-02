@@ -14,10 +14,10 @@ This API provides comprehensive management of real estate properties with SQLite
 
 Query Parameters:
 - `city` - Filter by city name (partial match)
-- `property_type` - Filter by type (house, condo, apartment, townhouse, duplex, other)
-- `status` - Filter by status (available, pending, sold, rented)
-- `bedrooms` - Filter by number of bedrooms
-- `bathrooms` - Filter by number of bathrooms
+- `property_type` - Filter by type (casa, condominio, departamento, townhouse, duplex)
+- `status` - Filter by status (disponible, pendiente, vendida, rentada)
+- `bedrooms` - Filter by minimum number of bedrooms (e.g., 3 returns 3+ bedroom properties)
+- `bathrooms` - Filter by minimum number of bathrooms (e.g., 2 returns 2+ bathroom properties)
 - `min_price` - Minimum price filter
 - `max_price` - Maximum price filter
 - `sort_by` - Sort field (created_at, price, square_feet, bedrooms, bathrooms)
@@ -26,7 +26,7 @@ Query Parameters:
 
 Example:
 ```bash
-curl "http://localhost:8000/api/properties?city=Chicago&bedrooms=3&min_price=200000&max_price=500000"
+curl "http://localhost:8000/api/properties?city=Guadalajara&bedrooms=3&min_price=200000&max_price=500000"
 ```
 
 ### 2. Create Property

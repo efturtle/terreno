@@ -102,19 +102,19 @@ class Property extends Model
     }
 
     /**
-     * Scope to filter by bedroom count.
+     * Scope to filter by minimum bedroom count.
      */
     public function scopeWithBedrooms($query, int $bedrooms)
     {
-        return $query->where('bedrooms', $bedrooms);
+        return $query->where('bedrooms', '>=', $bedrooms);
     }
 
     /**
-     * Scope to filter by bathroom count.
+     * Scope to filter by minimum bathroom count.
      */
     public function scopeWithBathrooms($query, int $bathrooms)
     {
-        return $query->where('bathrooms', $bathrooms);
+        return $query->where('bathrooms', '>=', $bathrooms);
     }
 
     /**
