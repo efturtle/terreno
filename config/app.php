@@ -17,6 +17,22 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Application Country Settings
+    |--------------------------------------------------------------------------
+    |
+    | These values determine country-specific settings for your application
+    | such as postal code formats, currency, etc.
+    |
+    */
+
+    'country' => [
+        'code' => env('APP_COUNTRY_CODE', 'MX'),
+        'postal_code_prefix' => env('APP_POSTAL_PREFIX', 'MX-'),
+        'currency' => env('APP_CURRENCY', 'MXN'),
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Environment
     |--------------------------------------------------------------------------
     |
