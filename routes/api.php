@@ -27,6 +27,6 @@ Route::prefix('properties')->name('api.properties.')->group(function () {
     Route::get('/stats', [PropertyController::class, 'stats'])->name('stats');
     Route::get('/{property}', [PropertyController::class, 'show'])->name('show');
     Route::put('/{property}', [PropertyController::class, 'update'])->name('update');
-    Route::patch('/{property}', [PropertyController::class, 'update'])->name('update');
+    Route::patch('/{property}', [PropertyController::class, 'update'])->name('update.partial');
     Route::delete('/{property}', [PropertyController::class, 'destroy'])->name('destroy');
 });
