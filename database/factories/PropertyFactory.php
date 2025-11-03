@@ -102,7 +102,7 @@ class PropertyFactory extends Factory
     public function sold(): static
     {
         return $this->state(fn (array $attributes) => [
-            'status' => 'sold',
+            'status' => 'vendida',
         ]);
     }
 
